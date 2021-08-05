@@ -1,182 +1,296 @@
 body {
-  background: rgb(43,78,104);
-  color: rgb(220,220,220);
-  font-family: 'Fira Code', monospace;
+  background: url(3.svg) no-repeat center center;
+  /* background: url('https://images.unsplash.com/photo-1420496368970-d83b063b5b48?fit=crop&fm=jpg&h=700&q=80&w=1225') no-repeat center center; */
+  background-size: 1400px 700px;
+  background-position: 30%;
+  background-attachment: fixed;
 }
+
+
+.text {
+  font-family: raleway;
+  font-size: 40px;
+  position: absolute center;
+  text-align: center;
+  padding-left: 0%;
+  color: #000;
+  margin-top: 43px;
+}
+
+.text1 {
+  font-family: raleway;
+  font-size: 21px;
+  text-align: center;
+  margin-top: -20px;
+  color: #000;
+}
+
+.image {
+  text-align: center;
+  width: 200px;
+  /* Container's dimensions */
   
-.typewriter {
-  position: absolute;
-  top: 10%;
-  left: 0%;
-}
-
-.typewriter h1 {
-  border-right: 0px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 390px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 10s steps(25) 1s 1 normal both;
-}
-
-.typewriter #line-1 {
-  border-right: 0px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 425px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 10s steps(40) 1s 1 normal both;
-  animation-delay: 3.5s;
-}
-
-#line-2 {
-  border-right: 1px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 405px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 5s steps(40) 1s 1 normal both;
-  animation-delay: 7s;
-}
-
-@keyframes typewriter {
-  0% {
-    width: 0;
-    border-right: none;
-  }
-  0.1% {
-    border-right: 1px solid rgb(220,220,220);
-  }
-  99.9% {
-    border-right: 1px solid rgb(220,220,220);
-  }
-  100% {
-    border: none;
-  }
-}
-
-i {
-opacity: 0;
-animation: fadeIn 2s ease-in-out;
-animation-delay: 10s;
-animation-fill-mode: forwards;
-padding-top: 1rem;
-padding-left: 20px;
-
-}
-
-a {
-  color: rgb(220,220,220);
-}
-
-@keyframes fadeIn {
-from {opacity:0;}
-to {opacity:1;}
-}
-
-.ball {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-radius: 50%;
-  left: 15%;
-  animation: ball .5s alternate infinite ease;
-}
-
-@keyframes ball {
-  0% {
-      top: 60px;
-      height: 5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.7);
-      background-color: #FF3EA5FF;
-  }
-
-  40% {
-      height: 20px;
-      border-radius: 50%;
-      transform: scaleX(1);
-      background-color: #EDFF00FF;
-  }
-
-  100% {
-      top: 0%;
-      background-color: #00A4CCFF;
-  }
-}
-
-.ball:nth-child(2) {
-  left: 45%;
-  animation-delay: .2s;
-}
-
-.ball:nth-child(3) {
-  left: auto;
-  right: 15%;
-  animation-delay: .3s;
-}
-
-/*for shadow*/
-
-.shadow {
-  width: 20px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #ffffff59;
-  position: absolute;
-  top: 62px;
-  z-index: -1;
-  left: 15%;
-  filter: blur(1px);
-  animation: shadow .5s alternate infinite ease;
-}
-
-@keyframes shadow {
-  0% {
-      transform: scaleX(1.5);
-      background-color: #ff3ea56b;
-  }
-
-  40% {
-      transform: scaleX(1);
-      opacity: .7;
-      background-color: #edff0066;
-  }
-
-  100% {
-      transform: scaleX(.2);
-      opacity: .4;
-      background-color: #00a4cc6b;
-  }
-}
-
-.shadow:nth-child(4) {
-  left: 45%;
-  animation-delay: .2s;
-}
-
-.shadow:nth-child(5) {
-  left: auto;
-  right: 15%;
-  animation-delay: .3s;
+  height: 200px;
+  -webkit-border-radius: 75%;
+  -moz-border-radius: 75%;
+  box-shadow: 0 0 0 1px #eee;
+  /* background: url("https://images.unsplash.com/reserve/ysPfhVSzSP2m629CW0mw_selfPortrait.jpg?fit=crop&fm=jpg&h=700&q=80&w=1225") center center 
+  no-repeat; */
+  background: url(4.jpg) center center no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  align-content: center;
 }
 
 
-h4 {
-  animation: animate 5s linear infinite forwards;
+
+.trick {
+  display: inline-block;
+  vertical-align: middle;
+  height: 150px;
 }
 
-@keyframes animate {
-  0% { transform: scale(1); }
-  25% { transform: scale(1.1); }
-  45% { transform: scale(1.4) skewX(-20deg);}
-  90% { transform: scale(1.1) skewX(-50deg); }
-  100% { transform: scale(1) skewX(-90deg); }
-  0% { transform: scale(1); }
-  25% { transform: scale(1.1); }
-  45% { transform: scale(1.4) skewX(-20deg);}
-  90% { transform: scale(1.1) skewX(-50deg); }
+.image:hover {
+  box-shadow: 0px 5px 20px .9px #3F3F3F;
+}
+
+.image:hover {
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: 1.6s ease-in-out;
+  transition: 1.6s ease-in-out;
+}
+
+
+
+.trick:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#overlay {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 0 0 0 0;
+  opacity: 1.0;
+  -webkit-transition: opacity 2.25s ease;
+  -moz-transition: opacity 10.25s ease;
+}
+
+#box:hover #overlay {
+  opacity: 1;
+}
+
+
+
+
+
+.panel-group{
+  width:350px;
+  margin:auto;
+  /*margin:50px 400px 50px 400px;*/
+  max-width:100%;
+}
+
+.panel-heading{
+  background-color:transparent !important;
+}
+
+.title{
+  text-align: center;
+  background-color:transparent;
+  color:#000;
+  font-family:lato;
+  font-weight:300;
+  font-size:15px;
+  max-width:100%;
+}
+
+
+
+
+#accordion{
+  background-color: transparent;
+  max-width:100%;
+  margin-bottom:200px;
+}
+
+
+
+
+
+
+
+.btn-outline {
+  color: inherit;
+  transition: all 1.4s;
+  background-color: transparent;
+}
+/* button CSS */
+
+.btn-danger.btn-outline {
+  margin-top: 9px;
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+  padding:auto;
+  padding:10px 0px 10px 0px;
+  margin: 1px 5px 1px 0px;
+  width: 100%;
+  text-align:center;
+  font-family: raleway;
+  font-weight: 300;
+  max-width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------    Contact Form    ------------*/
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000;
+  font-size: 15px;
+}
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+#form {
+  position: relative;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  font-family: raleway;
+}
+
+input {
+  font-family: raleway;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  padding: 0px 12px 0px 12px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #eee;
+  border-bottom: none;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+}
+
+input:hover {
+  background: #ccc;
+  color: #fff;
+  font-family: raleway;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #000;
+  font-family: raleway;
+  font-size: 25px;
+  border: solid 1px #eee;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+}
+
+textarea:hover {
+  background: #ccc;
+  color: #fff;
+  font-family: raleway;
+}
+
+#submit {
+  width: 100%;
+  padding: 0;
+  font-family: raleway;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #eee;
+  border-top: none;
+  margin-bottom: 0px;
+}
+
+#submit:hover {
+  color: #fff;
+  background-color: #ccc;
 }
